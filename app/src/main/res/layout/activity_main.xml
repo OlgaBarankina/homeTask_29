@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_purple"
+    android:paddingStart="@null"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clLogin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/light_purple"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="444dp"
+            android:text="Login Name: "
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/edLogin"
+            android:layout_width="121dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="444dp"
+            android:ems="5"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toEndOf="@+id/tvLogin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.981" />
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:text="Password:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="121dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:ems="5"
+            android:inputType="numberPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.198"
+            app:layout_constraintStart_toEndOf="@+id/tvPassword"
+            app:layout_constraintTop_toBottomOf="@+id/edLogin" />
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.479"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edPassword"
+            app:layout_constraintVertical_bias="0.056" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <CheckBox
+        android:id="@+id/bvFriend"
+        android:layout_width="95dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="8dp"
+        android:checked="true"
+        android:scrollbarDefaultDelayBeforeFade="200"
+        android:scrollbarFadeDuration="100"
+        android:text="Vladislav Az"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBestFriends" />
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:text="Ukraine, Kyiv"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/ivMainPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+    <ImageView
+        android:id="@+id/ivMainPhoto"
+        android:layout_width="122dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:adjustViewBounds="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018"
+        app:srcCompat="@drawable/photo1" />
+
+    <TextView
+        android:id="@+id/tvFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autoText="false"
+        android:background="#03A9F4"
+        android:text="Friends (543)"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMainPhoto" />
+
+    <TextView
+        android:id="@+id/tvBestFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:autoText="false"
+        android:background="#0003A9F4"
+        android:text="BestFriends (5)"
+        android:textSize="12sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFriends" />
+
+    <Button
+        android:id="@+id/bvChangeAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="8dp"
+        android:background="#03A9F4"
+        android:backgroundTint="#03A9F4"
+        android:text="Change Avatar"
+        android:textColorHighlight="#03A9F4"
+        android:textColorHint="#03A9F4"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivPhoto1"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:paddingStart="@null"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/ivMainPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/tvCity"
+        app:srcCompat="@drawable/photo2" />
+
+    <ImageView
+        android:id="@+id/ivPhoto2"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:paddingStart="@null"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/ivPhoto1"
+        app:layout_constraintTop_toBottomOf="@+id/tvCity"
+        app:srcCompat="@drawable/photo4" />
+
+    <ImageView
+        android:id="@+id/ivPhoto3"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/ivPhoto2"
+        app:layout_constraintTop_toBottomOf="@+id/tvCity"
+        app:srcCompat="@drawable/photo3" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="2dp"
+        android:text="Olga"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <TextView
+        android:id="@+id/tvUserSurName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Bar"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/tvUserName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUserAge"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="33"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/tvUserSurName"
+        app:layout_constraintTop_toTopOf="@+id/clLogin" />
+
+    <Button
+        android:id="@+id/bvChangeNameSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="Change Name/Surname/Age"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bvChangeAvatar" />
+
+    <ImageView
+        android:id="@+id/ivSearch"
+        android:layout_width="115dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018"
+        app:srcCompat="@drawable/search" />
+
+    <CheckBox
+        android:id="@+id/bvFriend2"
+        android:layout_width="95dp"
+        android:layout_height="17dp"
+        android:checked="true"
+        android:scrollbarDefaultDelayBeforeFade="200"
+        android:text="Nadezhda Ko"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bvFriend" />
+
+    <CheckBox
+        android:id="@+id/bvFriend3"
+        android:layout_width="95dp"
+        android:layout_height="17dp"
+        android:checked="true"
+        android:scrollbarDefaultDelayBeforeFade="200"
+        android:text="Vadim M"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bvFriend2" />
+
+    <CheckBox
+        android:id="@+id/bvFriend4"
+        android:layout_width="95dp"
+        android:layout_height="17dp"
+        android:checked="true"
+        android:scrollbarDefaultDelayBeforeFade="200"
+        android:text="Elena Kov"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bvFriend3" />
+
+    <CheckBox
+        android:id="@+id/bvFriend5"
+        android:layout_width="95dp"
+        android:layout_height="17dp"
+        android:checked="true"
+        android:scrollbarDefaultDelayBeforeFade="200"
+        android:text="Judmila K"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bvFriend4" />
+
+    <TextView
+        android:id="@+id/tvInterests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="4dp"
+        android:text="Interests: "
+        android:textSize="8sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPhoto1" />
+
+    <ImageView
+        android:id="@+id/ivInterest1"
+        android:layout_width="18dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/tvInterests"
+        app:layout_constraintTop_toBottomOf="@+id/ivPhoto1"
+        app:srcCompat="@drawable/image1" />
+
+    <TextView
+        android:id="@+id/tvQR"
+        android:layout_width="46dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="4dp"
+        android:text="quest rooms"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/ivInterest1"
+        app:layout_constraintTop_toBottomOf="@+id/ivPhoto1" />
+
+    <ImageView
+        android:id="@+id/ivInterest2"
+        android:layout_width="18dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/tvQR"
+        app:layout_constraintTop_toBottomOf="@+id/ivPhoto1"
+        app:srcCompat="@drawable/image2" />
+
+    <TextView
+        android:id="@+id/tvdancing"
+        android:layout_width="46dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="4dp"
+        android:text="dancing"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/ivInterest2"
+        app:layout_constraintTop_toBottomOf="@+id/ivPhoto1" />
+
+    <ImageView
+        android:id="@+id/ivInterest3"
+        android:layout_width="18dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/tvdancing"
+        app:layout_constraintTop_toBottomOf="@+id/ivPhoto1"
+        app:srcCompat="@drawable/image3" />
+
+    <TextView
+        android:id="@+id/tvInterest3"
+        android:layout_width="46dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="4dp"
+        android:text="Travelling"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/ivInterest3"
+        app:layout_constraintTop_toBottomOf="@+id/ivPhoto1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
